@@ -1,0 +1,43 @@
+{
+    "books":
+    [
+        {
+            "id":0,
+            "imageUrl":"https://img-gorod.ru/27/729/2772940_detail.jpg",
+            "name": "Преступление и наказание",
+            "author": "Ф.Достаевский",
+            "types": [
+                0
+            ],
+            "price": 803,
+            "category": 0,
+            "rating": 4
+        },
+        {
+            "id":1,
+            "imageUrl":"https://img-gorod.ru/27/729/2772940_detail.jpg",
+            "name": "Преступление и наказание",
+            "author": "Ф.Достаевский",
+            "types": [
+                0
+            ],
+            "price": 803,
+            "category": 0,
+            "rating": 4
+        },
+        {
+            "id":2,
+            "imageUrl":"https://img-gorod.ru/27/729/2772940_detail.jpg",
+            "name": "Преступление и наказание",
+            "author": "Ф.Достаевский",
+            "types": [
+                0,
+                1
+            ],
+            "price": 803,
+            "category": 0,
+            "rating": 4
+        }
+    ]
+    
+}
