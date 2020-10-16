@@ -43,6 +43,7 @@ class SortMenu extends React.Component {
 
     render(){
         const {items} = this.props;
+        console.log(items[this.state.activeItem])
         return (
             <div 
             ref={this.sortRef}
@@ -62,7 +63,7 @@ class SortMenu extends React.Component {
                     />
                     </svg>
                     <b>Сортировка по:</b>
-                    <span onClick={() => this.onClickSort(!this.state.visibleSort)}>{items[this.state.activeItem]}</span>
+                    <span onClick={() => this.onClickSort(!this.state.visibleSort)}>{items[this.state.activeItem].name}</span>
                     </div>
                     {/* Если this.state.visibleSort true, тогда окно появляется */}
                     {this.state.visibleSort && <div className="sort__popup">

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import classNames from 'classnames'
 
 function Book({name, author, imageUrl, types, price, category, rating})  {
@@ -8,6 +8,7 @@ function Book({name, author, imageUrl, types, price, category, rating})  {
     const onSelectedType = (index) => {
         setActiveType(index);
     }
+    
     return (
         <div className="book-block">
             <img

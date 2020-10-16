@@ -3,12 +3,14 @@ import {Categories, SortMenu, Book} from '../components';
 
 class Home extends React.Component{
 
+
     render(){
+        const books =this.props.bookArr[0];
         return (
             <div className="container">
                 <div className="content__top">
                     <Categories 
-                    onClick={(name) => console.log(name)}
+                    // onClick={(name) => console.log(name)}
                     items={[
                         'Детектив',
                         'Фантастика',
@@ -25,7 +27,7 @@ class Home extends React.Component{
                 <h2 className="content__title">Все книги</h2>
                 <div className="content__items">
                     {
-                        this.props.bookArr.map((obj) => <Book key={obj.id} {...obj} />)
+                        books.map((obj) => <Book key={obj.id} {...obj} />)
                     }
                     
                 </div> 
